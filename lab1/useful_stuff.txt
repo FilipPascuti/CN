@@ -1,0 +1,12 @@
+
+
+
+for ploting:
+    https://stackoverflow.com/questions/16868074/how-can-i-plot-a-function-with-two-variables-in-octave-or-matlab
+
+    mesh(xx, yy, z);
+
+
+
+
+
