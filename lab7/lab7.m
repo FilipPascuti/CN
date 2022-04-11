@@ -63,15 +63,23 @@
 % exercice 3) 
 
 clf;
+hold on;
 grid on;
 axis([0 3 0 5]);
-[x, f] = ginput(10);
 
-hold on;
-plot(x, f, "*");
+xx = [];
+ff = [];
 
+for i=1:10
 
-quadratic = polyfit(x, f, 2);
+    [x, f] = ginput(1);
+    plot(x,f,"*b");
+    xx = [xx x];
+    ff = [ff f];
+
+endfor
+
+quadratic = polyfit(xx, ff, 2);
 space = 0 : 0.01 : 3;
 plot(space, polyval(quadratic, space));
 
