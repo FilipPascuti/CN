@@ -1,5 +1,5 @@
 % a)
-
+##
 ##hold on
 ##T1=@(t) cos(1.*acos(t))
 ##fplot(T1,[-1,1])
@@ -11,7 +11,7 @@
 ##fplot(T3,[-1,1])
 
 % b)
-
+##
 function x=pb2(N)
   clf; hold on;
   t0 = @(x) ones(size(x));
